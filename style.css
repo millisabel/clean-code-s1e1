@@ -1,6 +1,10 @@
 /* п. 3.4. Не используйте теговые селекторы
 (за исключением намеренного сброса дефолтных стилей).*/
 
+input, button {
+	outline: none;
+}
+
 ul {
 	margin: 0;
 	padding: 0px;
@@ -9,10 +13,6 @@ ul {
 li,
 h3 {
 	list-style: none;
-}
-
-input, button {
-	outline: none;
 }
 
 /* Basic Style */
