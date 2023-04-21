@@ -41,9 +41,11 @@ input, button {
 }
 
 @media (max-width: 768px) {
+
 	.promotion {
 		text-align: center;
 	}
+
 }
 
 /* to-do */
@@ -142,6 +144,7 @@ input, button {
 }
 
 /* New Task */
+
 .task--new{
 	border-bottom: none;
 }
