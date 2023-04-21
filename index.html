@@ -24,37 +24,41 @@
   <h2 class="visually-hidden">app</h2>
   <article>
     <h3 class="todo__title" id="add-items">Add Item</h3>
-    <div class="todo__item task task--new">
+    <div class="task task_new">
       <label class="task__text" for="new-task"></label>
       <input class="task__field"
              id="new-task"
              type="text">
-      <button class="btn task__btn task__btn--add">Add</button>
+      <button class="task__btn task__btn--add">Add</button>
     </div>
   </article>
-  <article>
+  <article class="task__btn_edit">
     <h3 class="todo__title">Todo</h3>
     <ul class="todo__list todo__list_incomplete"
         id="incomplete-tasks">
-      <li class="todo__item task">
+      <li class="task">
         <input class="task__checkbox" type="checkbox">
         <label class="task__text">Pay Bills</label>
         <input class="task__field"
                type="text">
-        <button class="btn task__btn task__btn--edit">Edit</button>
-        <button class="btn task__btn task__btn--delete">
-          <img class="btn__img" alt="img_remove" src="./remove.svg">
+        <button class="task__btn task__btn_edit">Edit</button>
+        <button class="task__btn task__btn_delete">
+          <img class="task__img"
+               alt="remove item"
+               src="./remove.svg">
         </button>
       </li>
-      <li class="todo__item task task_edit">
+      <li class="task task_edit">
         <input class="task__checkbox" type="checkbox">
         <label class="task__text">Go Shopping</label>
         <input class="task__field"
                type="text"
                value="Go Shopping">
-        <button class="btn task__btn task__btn--edit">Save</button>
-        <button class="btn task__btn task__btn--delete">
-          <img class="btn__img" alt="img_remove" src="./remove.svg">
+        <button class="task__btn task__btn_edit">Save</button>
+        <button class="task__btn task__btn_delete">
+          <img class="task__img"
+               alt="remove item"
+               src="./remove.svg">
         </button>
       </li>
     </ul>
@@ -63,14 +67,16 @@
     <h3 class="todo__title">Completed</h3>
     <ul class="todo__list todo__list_completed"
         id="completed-tasks">
-      <li class="todo__item task">
+      <li class="task">
         <input class="task__checkbox" type="checkbox" checked>
         <label class="task__text">See the Doctor</label>
         <input class="task__field"
                type="text">
-        <button class="task__btn task__btn--edit">Edit</button>
-        <button class="btn task__btn task__btn--delete">
-          <img class="btn__img" alt="img_remove" src="./remove.svg">
+        <button class="task__btn task__btn_edit">Edit</button>
+        <button class="task__btn task__btn_delete">
+          <img class="task__img"
+               alt="remove item"
+               src="./remove.svg">
         </button>
       </li>
     </ul>

@@ -146,27 +146,27 @@ h3 {
 	color: #3a3A3a;
 }
 
-.task__btn--delete .btn__img{
+.task__btn_delete .task__img{
 	height: 2em;
 	transform: rotateZ(45deg);
 	transition: transform 200ms ease-in;
 }
 
-.task__btn--delete .btn__img:hover {
+.task__btn_delete .task__img:hover {
 	transform: rotateZ(0);
 }
 
 /* New Task */
 
-.task--new{
+.task_new{
 	border-bottom: none;
 }
 
-.task--new .task__text {
+.task_new .task__text {
 	display: none;
 }
 
-.task--new .task__field {
+.task_new .task__field {
 	display: inline-block;
 }
 
