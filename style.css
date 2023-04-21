@@ -69,7 +69,7 @@ input, button {
 /* Completed */
 
 .todo__list_completed .task__text {
-	text-decoration: line-through
+	text-decoration: line-through;
 	color: #888;
 }
 
