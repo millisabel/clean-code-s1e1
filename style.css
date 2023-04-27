@@ -1,203 +1,204 @@
 /* п. 3.4. Не используйте теговые селекторы
 (за исключением намеренного сброса дефолтных стилей).*/
 
-input, button {
-	outline: none;
+input,
+button {
+  outline: none;
 }
 
 ul {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 li,
 h3 {
-	list-style: none;
+  list-style: none;
 }
 
 /* Basic Style */
 
 .body {
-	font-family: Lato, sans-serif;
-	color: #333;
+  font-family: "Lato", sans-serif;
+  color: #333;
 
-	background-color: #f8f8f8;
+  background-color: #f8f8f8;
 }
 
 .visually-hidden:not(:focus):not(:active) {
-	position: absolute;
+  position: absolute;
 
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	border: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
 
-	white-space: nowrap;
+  white-space: nowrap;
 
-	clip: rect(0 0 0 0);
-	clip-path: inset(100%);
-	overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
 }
 
 /* promotion */
 
 .promotion {
-	display: block;
+  display: block;
 
-	width: 500px;
-	margin: 0 auto;
+  width: 500px;
+  margin: 0 auto;
 
-	text-align: right;
+  text-align: right;
 }
 
 .promotion__img {
-	width: 100%;
+  width: 100%;
 }
 
 .promotion__link {
-	font-family: fantasy, cursive;
+  font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-	.promotion {
-		text-align: center;
-	}
+  .promotion {
+    text-align: center;
+  }
 
 }
 
 /* to-do */
 
 .todo {
-	display: block;
+  display: block;
 
-	width: 500px;
-	margin: 0 auto 0;
+  width: 500px;
+  margin: 0 auto 0;
 }
 
 .todo__title {
-	padding: 30px 0 10px;
-	margin: 0;
-	border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  border-bottom: 2px solid #333;
 
-	font-weight: 700;
-	font-size: 15px;
-	color: #333;
-	text-transform: uppercase;
+  font-weight: 700;
+  font-size: 15px;
+  color: #333;
+  text-transform: uppercase;
 }
 
 /* Completed */
 
 .todo__list_completed .task__text {
-	color: #888;
-	text-decoration: line-through;
+  color: #888;
+  text-decoration: line-through;
 }
 
 /*task*/
 
 .task {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-	padding: 20px 0;
-	border-bottom: 1px solid #eee;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
 
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .task > * {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 .task__checkbox {
-	margin: 0 10px;
+  margin: 0 10px;
 }
 
 .task__text {
-	box-sizing: border-box;
+  box-sizing: border-box;
 
-	flex-grow: 1;
+  flex-grow: 1;
 
-	width: 226px;
-	padding-left: 10px;
+  width: 226px;
+  padding-left: 10px;
 
-	font-size: 18px;
+  font-size: 18px;
 }
 
 .task__field{
-	display: none;
+  display: none;
 
-	flex-grow: 1;
+  flex-grow: 1;
 
-	width: 56%;
-	height: 21px;
-	padding: 0 9px;
-	border: 1px solid #dDd;
-	border-radius: 6px;
+  width: 56%;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
 
-	font-family: Lato, sans-serif;
-	font-size: 18px;
-	line-height: 18px;
-	color: #888;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #888;
 
-	background: #FFF;
+  background: #fff;
 }
 
 .task__field:focus {
-	color: #333;
+  color: #333;
 }
 
 .task__btn {
-	width: 60px;
-	border: 0;
+  width: 60px;
+  border: 0;
 
-	font-family: Lato, sans-serif;
-	font-size: 15px;
-	color: #888;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  color: #888;
 
-	background: none;
-	cursor: pointer;
+  background: none;
+  cursor: pointer;
 }
 
 .task__btn:hover {
-	color: #3a3A3a;
+  color: #3a3a3a;
 }
 
 .task__btn_delete .task__img{
-	height: 2em;
+  height: 2em;
 
-	transform: rotateZ(45deg);
-	transition: transform 200ms ease-in;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
 }
 
 .task__btn_delete .task__img:hover {
-	transform: rotateZ(0);
+  transform: rotateZ(0);
 }
 
 /* New Task */
 
 .task_new{
-	border-bottom: none;
+  border-bottom: none;
 }
 
 .task_new .task__text {
-	display: none;
+  display: none;
 }
 
 .task_new .task__field {
-	display: inline-block;
+  display: inline-block;
 }
 
 /* Edit Task */
 
 .task_edit .task__field {
-	display: inline-block;
+  display: inline-block;
 
-	width: 224px
+  width: 224px;
 }
 
 .task_edit .task__text {
-	display: none;
+  display: none;
 }
